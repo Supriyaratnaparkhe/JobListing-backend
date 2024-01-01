@@ -28,9 +28,10 @@ app.use('/', authRoute);
 // Api to create a new Job
 app.use('/', jobPostRoute)
 
+const port = process.env.PORT || 8000;
 
-app.listen(process.env.PORT, () => {
+app.listen(port, () => {
     mongoose.connect(process.env.MONGODB_URL)
-        .then(() => console.log(`Server running at http://localhost:${process.env.PORT}`))
+        .then(() => console.log(`Server running at port`))
         .catch((error) => console.log(error))
 })
