@@ -9,8 +9,13 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cors(
+    {
+        origin:["https://deft-cassata-c4d67b.netlify.app"],
+        methods:["POST","GET","PUT"],
+        credentials:true
+));
+
 app.use(bodyParser.json())
 app.use(express.json())
 
