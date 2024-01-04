@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin:["https://deft-cassata-c4d67b.netlify.app"],
+        origin:["https://joblisting-app-bysupriya.netlify.app"],
         methods:["POST","GET","PUT"],
         credentials:true
        // "Access-Control-Allow-Origin": "*",
