@@ -14,8 +14,6 @@ app.use(cors(
         origin:["https://joblisting-app-bysupriya.netlify.app"],
         methods:["POST","GET","PUT"],
         credentials:true
-       // "Access-Control-Allow-Origin": "*",
-       // "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
     }
 ));
 
